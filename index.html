@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERU — il103.github.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Loading -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">SYSTEM.OS</div>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <div class="loader-text">Initializing kernel...</div>
+        </div>
+    </div>
+
+    <!-- Background FX -->
+    <div class="bg-fx">
+        <div class="bg-grid"></div>
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+        <div class="scanline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">BERU</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link active">~/home</a>
+                <a href="#signal" class="nav-link">~/signal</a>
+                <a href="#skills" class="nav-link">~/skills</a>
+                <a href="#terminal" class="nav-link">~/console</a>
+                <a href="#work" class="nav-link">~/work</a>
+                <a href="#contact" class="nav-link">~/contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">≡</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#hero" onclick="closeMenu()">~/home</a>
+        <a href="#signal" onclick="closeMenu()">~/signal</a>
+        <a href="#skills" onclick="closeMenu()">~/skills</a>
+        <a href="#terminal" onclick="closeMenu()">~/console</a>
+        <a href="#work" onclick="closeMenu()">~/work</a>
+        <a href="#contact" onclick="closeMenu()">~/contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+            <div class="hero-tag">
+                <span class="tag-pulse"></span>
+                SYSTEM.OS // Running on code and coffee
+            </div>
+            <h1 class="hero-title">
+                Building digital<br>
+                <span class="glitch" data-text="realities">realities</span>
+            </h1>
+            <p class="hero-sub">
+                I build identity, code, Android projects, experiments, and polished<br>
+                developer spaces with a strong visual edge.
+            </p>
+            <div class="hero-meta">
+                <span class="meta-item">Python</span>
+                <span class="meta-item">Java</span>
+                <span class="meta-item">JavaScript</span>
+                <span class="meta-item">Node.js</span>
+                <span class="meta-item">Linux</span>
+                <span class="meta-item">Android</span>
+                <span class="meta-item">GitHub</span>
+                <span class="meta-item">UI Motion</span>
+                <span class="meta-item">Recovery</span>
+                <span class="meta-item">Discord</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#work" class="btn-glow">Explore Work</a>
+                <a href="https://github.com/Il103" target="_blank" class="btn-ghost">GitHub →</a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span class="scroll-line"></span>
+            <span class="scroll-text">scroll</span>
+        </div>
+    </section>
+
+    <!-- Signal -->
+    <section class="signal" id="signal">
+        <div class="section-head">
+            <span class="section-label">// signal</span>
+            <h2 class="section-title">Quick high-impact cards</h2>
+            <p class="section-desc">so the profile feels alive from the first screen</p>
+        </div>
+        <div class="signal-grid">
+            <div class="signal-card">
+                <div class="signal-icon">GH</div>
+                <div class="signal-info">
+                    <h3>GitHub Handle</h3>
+                    <p>@Il103</p>
+                </div>
+                <div class="signal-bar"></div>
+            </div>
+            <div class="signal-card">
+                <div class="signal-icon">◈</div>
+                <div class="signal-info">
+                    <h3>Vibe</h3>
+                    <p>Premium / Animated</p>
+                </div>
+                <div class="signal-bar"></div>
+            </div>
+            <div class="signal-card">
+                <div class="signal-icon">⚡</div>
+                <div class="signal-info">
+                    <h3>Main Focus</h3>
+                    <p>Android + Web Identity</p>
+                </div>
+                <div class="signal-bar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="section-head">
+            <span class="section-label">// skills</span>
+            <h2 class="section-title">Technical Stack</h2>
+            <p class="section-desc">Tools, languages, and systems in the arsenal</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item"><span class="skill-dot"></span>Python</div>
+            <div class="skill-item"><span class="skill-dot"></span>Java</div>
+            <div class="skill-item"><span class="skill-dot"></span>JavaScript</div>
+            <div class="skill-item"><span class="skill-dot"></span>Node.js</div>
+            <div class="skill-item"><span class="skill-dot"></span>Linux</div>
+            <div class="skill-item"><span class="skill-dot"></span>Android Modding</div>
+            <div class="skill-item"><span class="skill-dot"></span>GitHub</div>
+            <div class="skill-item"><span class="skill-dot"></span>UI Motion</div>
+            <div class="skill-item"><span class="skill-dot"></span>Recovery / Porting</div>
+            <div class="skill-item"><span class="skill-dot"></span>Discord</div>
+        </div>
+    </section>
+
+    <!-- Terminal -->
+    <section class="terminal" id="terminal">
+        <div class="section-head">
+            <span class="section-label">// console</span>
+            <h2 class="section-title">BERU Terminal</h2>
+            <p class="section-desc">v2.0 — Client-side simulated console. Type "help" to explore.</p>
+        </div>
+        <div class="terminal-window">
+            <div class="term-header">
+                <div class="term-btns">
+                    <span></span><span></span><span></span>
+                </div>
+                <span class="term-title">beru@devspace:~</span>
+            </div>
+            <div class="term-body" id="termBody">
+                <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></div>
+                <div class="term-line term-out">beru — Android developer & kernel builder</div>
+                <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cat system.info</span></div>
+                <div class="term-line term-out dim">OS: Custom Identity</div>
+                <div class="term-line term-out dim">Status: Running on code and coffee</div>
+                <div class="term-line term-out dim">Mission: Building digital realities, one commit at a time</div>
+                <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">ls skills/</span></div>
+                <div class="term-line term-out accent">python  java  javascript  nodejs  linux  android</div>
+                <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">ls projects/</span></div>
+                <div class="term-line term-out accent">Project_Onyx  Recovery_Builder  Premium_Web</div>
+                <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cat contact.txt</span></div>
+                <div class="term-line term-out warn">GitHub: @Il103 | Telegram: @llmify</div>
+                <div class="term-input-line">
+                    <span class="term-prompt">$</span>
+                    <input type="text" class="term-input" id="termInput" placeholder="Type help..." autocomplete="off">
+                    <span class="term-cursor">▋</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+        <div class="section-head">
+            <span class="section-label">// work</span>
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-desc">Fast showcase blocks tuned to your GitHub identity and Android / builder energy</p>
+        </div>
+        <div class="work-grid">
+            <div class="work-card">
+                <div class="work-visual" style="background: linear-gradient(135deg, #00d4ff20, #a855f720);">
+                    <span class="work-icon">⚫</span>
+                </div>
+                <div class="work-body">
+                    <h3>Project Onyx</h3>
+                    <p>An intelligent kernel-builder direction for Galaxy Tab A7 work, tied to CI ideas and cleaner builder identity.</p>
+                    <div class="work-tags">
+                        <span>KernelCI</span>
+                        <span>Android</span>
+                    </div>
+                </div>
+                <a href="https://github.com/Il103" target="_blank" class="work-link">View →</a>
+            </div>
+            <div class="work-card">
+                <div class="work-visual" style="background: linear-gradient(135deg, #a855f720, #ec489920);">
+                    <span class="work-icon">🔧</span>
+                </div>
+                <div class="work-body">
+                    <h3>Recovery Builder Flow</h3>
+                    <p>Recovery-builder focused repos and experiments around TWRP / OrangeFox style workflows.</p>
+                    <div class="work-tags">
+                        <span>Python</span>
+                        <span>Recovery</span>
+                    </div>
+                </div>
+                <a href="https://github.com/Il103" target="_blank" class="work-link">View →</a>
+            </div>
+            <div class="work-card">
+                <div class="work-visual" style="background: linear-gradient(135deg, #ec489920, #f59e0b20);">
+                    <span class="work-icon">🌐</span>
+                </div>
+                <div class="work-body">
+                    <h3>Premium Dev Presence</h3>
+                    <p>Web identity, animated landing pages, and polished presentation systems for personal and team branding.</p>
+                    <div class="work-tags">
+                        <span>Web</span>
+                        <span>Brand</span>
+                    </div>
+                </div>
+                <a href="https://github.com/Il103" target="_blank" class="work-link">View →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="stats">
+        <div class="stats-grid">
+            <div class="stat-block">
+                <div class="stat-num" data-target="50">0</div>
+                <div class="stat-label">Repositories</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num" data-target="200">0</div>
+                <div class="stat-label">GitHub Stars</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num" data-target="15">0</div>
+                <div class="stat-label">Devices Ported</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num" data-target="5">0</div>
+                <div class="stat-label">Years Active</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="section-head">
+            <span class="section-label">// contact</span>
+            <h2 class="section-title">Sync Connection</h2>
+            <p class="section-desc">Reach out through any channel. Response time: variable.</p>
+        </div>
+        <div class="contact-grid">
+            <a href="https://github.com/Il103" target="_blank" class="contact-card">
+                <div class="contact-icon">GH</div>
+                <div class="contact-info">
+                    <h4>GitHub</h4>
+                    <p>@Il103</p>
+                </div>
+            </a>
+            <a href="https://t.me/llmify" target="_blank" class="contact-card">
+                <div class="contact-icon">TG</div>
+                <div class="contact-info">
+                    <h4>Telegram</h4>
+                    <p>@llmify</p>
+                </div>
+            </a>
+            <a href="mailto:looooly590@gmail.com" class="contact-card">
+                <div class="contact-icon">@</div>
+                <div class="contact-info">
+                    <h4>Email</h4>
+                    <p>looooly590@gmail.com</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">BERU</span>
+                <span class="logo-bracket">]</span>
+            </div>
+            <p class="footer-copy">il103.github.io · Custom Identity · Built with code and coffee</p>
+            <div class="footer-links">
+                <a href="https://github.com/Il103" target="_blank">GitHub</a>
+                <a href="https://t.me/llmify" target="_blank">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
